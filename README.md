@@ -1,8 +1,11 @@
 # WOOYEWEB
 Open API와 추천 시스템(머신러닝)을 활용한 SpringMVC WEB
 * WEB
+** Code
+** OpenAPI
+** Recommendation System(machine learning)
 * DB
-* Recommendation System
+* Recommendation System : 딥러닝을 이용한 추천 시스템 (colab)
 
 <우예 : 우리의 예술>
 - 문화&예술 데이터 웹사이트
