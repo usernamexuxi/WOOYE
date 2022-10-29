@@ -1,9 +1,9 @@
 # WOOYEWEB
 Open API와 추천 시스템(머신러닝)을 활용한 SpringMVC WEB
 * WEB
-** Code
-** OpenAPI
-** Recommendation System(machine learning)
+  - Code
+  - OpenAPI
+  - Recommendation System(machine learning)
 * DB
 * Recommendation System : 딥러닝을 이용한 추천 시스템 (colab)
 
