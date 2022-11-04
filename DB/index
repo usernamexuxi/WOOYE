@@ -1,3 +1,4 @@
 [DB]
 ● MySQL - Amazon RDS 연동
 ● sql문으로 디비, 테이블 생성 및 데이터 값 넣음 (classic, masterpiece, grade DB는 csv 파일로 테이블 생성)
++ ott.sql : ott 데이터 값 넣기 (img, video는 Amazon S3 사용)
