@@ -175,10 +175,3 @@ CREATE TABLE my_era (
     title  VARCHAR(500)    NOT NULL,
     PRIMARY KEY (seq)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
-
-/* 
-classic
-masterpiece
-grade
-DB는 csv 파일로 테이블 만듬...
-*/
