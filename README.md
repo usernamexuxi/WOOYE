@@ -1,15 +1,13 @@
 # WOOYEWEB
 Open API와 추천 시스템(머신러닝)을 활용한 SpringMVC WEB
-* WEB
-  - Code
-  - OpenAPI
-  - Flask : Recommendation System(machine learning) : VSCode 환경에서 파이썬으로 코드 작성 후 플라스크를 이용하여 자바 스프링 웹이랑 통신
-* DB
-* Recommendation System : 딥러닝을 이용한 추천 시스템 (직접 만든 데이터를 기반으로 'colab'에서 파이썬으로 개발)
 
 <우예 : 우리의 예술>
-- 문화&예술 데이터 웹사이트
--
+: 문화&예술 데이터 웹사이트
+- Open API(전시회&공연 예약 및 예술가 정보)
+- 회원 맞춤 명화&클래식 추천 시스템: 회원이 회원가입/취향 재설정에서 기입한 취향을 바탕으로 추천
+- 커뮤니티: 글 작성/수정/삭제/검색/좋아요/신고, 댓글 작성/수정/삭제/신고
+- 코인으로 OTT 구매 후 관람
+- 마이페이지(회원/관리자): 내 정보 수정, 커뮤니티 글/댓글 확인, 전시회&공연 예약 취소, 코인 충전 및 보유 코인 확인, OTT 관리, 탈퇴
 
 [Amazon EC2 주소 및 메인 페이지 디자인]
 ![우예웹_메인페이지_AWS주소](https://user-images.githubusercontent.com/116962624/200186681-e98b8a6f-1970-48ed-9aaf-2feb0ff7fe95.jpeg)
