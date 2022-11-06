@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+/*폰트 적용*/
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+
+
+/*라이브러리*/
+
+.con {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.img-box > a img {
+    display: block;
+    width: 100%;
+}
+
+.con {
+    max-width: 1000px;
+}
+.logo-bar {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.bn-box {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.menu-box {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.menu-box > ul > li {
+    width: calc(100% / 5);
+}
+
+.menu-box > ul > li > a {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+.menu-box > ul > li:hover > a {
+    color: red;
+    text-decoration: underline;
+}
+.menu-box > ul > li > a::before,
+.menu-box > ul > li > a::after {
+    content: "";
+    width: 1px;
+    height: 13px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 0;
+}
+.menu-box > ul > li > a::after {
+    left: auto;
+    right: 0;
+}
+.menu-box > ul > li:first-child > a::before,
+.menu-box > ul > li:last-child > a::after {
+    width: 2px;
+}
+.list > ul > li {
+    width: calc(100% / 6);
+}
+
+.list > ul > li {
+    padding: 0 10px;
+}
+.list > ul {
+    margin: 0 -10px;
+}
+
+.list > ul > li > .product-name {
+    text-align: Center;
+    font-weight: bold;
+}
+.list > ul > li:hover > .product-name {
+    text-decoration: underline;
+}
+.list > ul > li > .product-price {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.list > ul > li > .product-price::after {
+    content: "원";
+    font-size: 1rem;
+    font-weight:normal;
+}
+
+
+
+
+
+
+
+/*-----탭-----*/
+
+/* 탭 전체 스타일 */
+.tabs {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0 auto;
+  }
+
+/* 탭 스타일 */
+.tab_item {
+  width: calc(100%/2);
+  height: 50px;
+  border-bottom: 3px solid #333333;
+  background-color: #f8f8f8;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #333333;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+.tab_item:hover {
+  opacity: 0.75;
+}
+
+/* 라디오 버튼 UI삭제*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/* 탭 컨텐츠 스타일 */
+.tab_content {
+  display: none;
+  padding: 40px 40px 0;
+  clear: both;
+  overflow: hidden;
+}
+
+
+/* 선택 된 탭 콘텐츠를 표시 */
+#all:checked ~ #all_content,
+#programming:checked ~ #programming_content{
+  display: block;
+}
+
+/* 선택된 탭 스타일 */
+.tabs input:checked + .tab_item {
+  background-color: #333333;
+  color: #fff;
+}
+
+
+
+
