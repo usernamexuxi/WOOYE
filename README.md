@@ -12,4 +12,4 @@ Open API와 추천 시스템(머신러닝)을 활용한 SpringMVC WEB
 -
 
 [메인 페이지]
-(https://user-images.githubusercontent.com/116962624/200186464-c68380ac-b387-4ebe-b56a-fcf95eef0933.jpeg)
+![우예웹_메인페이지](https://user-images.githubusercontent.com/116962624/200186464-c68380ac-b387-4ebe-b56a-fcf95eef0933.jpeg)
