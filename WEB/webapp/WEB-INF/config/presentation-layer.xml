@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- HandlerMapping 등록 -->
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="/main.do">main</prop>
+				<prop key="/infomain.do">info/info_main</prop>
+				<prop key="/infosearch.do">info/info_search</prop>
+				<prop key="/info_submit_hisa.do">info/info_more_hisa</prop>
+				<prop key="/info_submit_beethoven.do">info/info_more_beethoven</prop>
+				<prop key="/info_submit_mozart.do">info/info_more_mozart</prop>
+				<prop key="/info_submit_gogh.do">info/info_more_gogh</prop>
+				<prop key="/info_submit_monet.do">info/info_more_monet</prop>
+				<prop key="/info_submit_munch.do">info/info_more_munch</prop>
+				<prop key="/exconmain.do">excon/ExConPage</prop>
+				<prop key="/exconsearch.do">excon/ExConSearch</prop>
+				<prop key="/exconmore.do">excon/ExConBooking</prop>
+				<prop key="/exconmore2.do">excon/ExConBooking2</prop>
+				<prop key="/exconmore3.do">excon/ExConBooking3</prop>
+				<prop key="/exconcompl.do">excon/ExConCompl</prop>
+				<prop key="/ottmain.do">ott/OttPage</prop>
+				<prop key="/ottbooking.do">ott/OttBooking</prop>
+				<prop key="/ottcompl.do">ott/OttCompl</prop>
+				<prop key="/myottlooking.do">ott/OTTLooking</prop>
+				<prop key="/likeott.do">ott/OttLike</prop>
+				<prop key="/favmain.do">favorite/favorite_main</prop>
+				<prop key="/newmyfav.do">favorite/favorite_new</prop>
+				<prop key="/newmyfav_submit.do">favorite/favorite_newsubmit</prop>
+				<prop key="/login.do">login/login</prop>
+				<prop key="/join.do">join/join_up</prop>
+				<prop key="/join_submit1.do">join/join_check</prop>
+				<prop key="/join_submit2.do">join/join_check2</prop>
+				<prop key="/boardmain.do">board/board_main</prop>
+				<prop key="/getBoardList.do">board/getBoardList</prop>
+				<prop key="/getBoard.do">board/getBoard</prop>
+				<prop key="/deleteBoard.do">board/deleteBoard</prop>
+				<prop key="/insertBoard.do">board/insertBoard</prop>
+				<prop key="/updateBoard.do">board/updateBoard</prop>
+				<prop key="/boardcmt_input.do">board/board_main</prop>
+				<prop key="/boardcmt_update.do">board/updateComment</prop>
+				<prop key="/boardcmt_delete.do">board/deleteComment</prop>
+				<prop key="/board_clean.do">board/cleanBoard</prop>
+				<prop key="/boardcmt_clean.do">board/cleanBoardcmt</prop>
+				<prop key="/likeboard.do">board/likeBoard</prop>
+				<prop key="/mypage.do">mypage/myPage</prop>
+				<prop key="/byemypage.do">mypage/byemyPage</prop>
+				<prop key="/mypagemodify.do">mypage/modifymyPage</prop>
+				<prop key="/excondelete.do">mypage/exconmyPage</prop>
+				<prop key="/myboard.do">mypage/boardmyPage</prop>
+				<prop key="/mycomment.do">mypage/commentmyPage</prop>
+				<prop key="/myboardcut.do">mypage/boardcutmyPage</prop>
+				<prop key="/mycommentcut.do">mypage/commentcutmyPage</prop>
+				<prop key="/mycoinbuy.do">mypage/coinbuymyPage</prop>
+				<prop key="/logout.do">logout</prop>
+				<prop key="/byewooye.do">mypage/bye</prop>
+				<prop key="/myfav_co.do">favorite/myfav_co</prop>
+				<prop key="/myfav_cp.do">favorite/myfav_cp</prop>
+				<prop key="/myfav_cn.do">favorite/myfav_cn</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- Controller 등록 -->
+	<bean id="main" class="com.wooye.controller.HomeController"></bean>
+	<bean id="info/info_main" class="com.wooye.info.controller.infoController"></bean>
+	<bean id="info/info_search" class="com.wooye.info.controller.infoController"></bean>
+	<bean id="info/info_more_hisa" class="com.wooye.info.controller.infoController"></bean>
+	<bean id="info/info_more_beethoven" class="com.wooye.info.controller.infoController"></bean>
+	<bean id="info/info_more_mozart" class="com.wooye.info.controller.infoController"></bean>
+	<bean id="info/info_more_gogh" class="com.wooye.info.controller.infoController"></bean>
+	<bean id="info/info_more_monet" class="com.wooye.info.controller.infoController"></bean>
+	<bean id="info/info_more_munch" class="com.wooye.info.controller.infoController"></bean>
+	<bean id="excon/ExConPage" class="com.wooye.excon.controller.exconController"></bean>
+	<bean id="excon/ExConSearch" class="com.wooye.excon.controller.exconController"></bean>
+	<bean id="excon/ExConBooking" class="com.wooye.excon.controller.exconController"></bean>
+	<bean id="excon/ExConBooking2" class="com.wooye.excon.controller.exconController"></bean>
+	<bean id="excon/ExConBooking3" class="com.wooye.excon.controller.exconController"></bean>
+	<bean id="excon/ExConCompl" class="com.wooye.excon.controller.exconController"></bean>
+	<bean id="ott/OttPage" class="com.wooye.ott.controller.ottController"></bean>
+	<bean id="ott/OttBooking" class="com.wooye.ott.controller.ottController"></bean>
+	<bean id="ott/OttCompl" class="com.wooye.ott.controller.ottController"></bean>
+	<bean id="ott/OTTLooking" class="com.wooye.mypage.controller.mypageController"></bean>
+	<bean id="ott/OttLike" class="com.wooye.ott.controller.ottController"></bean>
+	<bean id="favorite/favorite_main" class="com.wooye.favorite.controller.favController"></bean>
+	<bean id="favorite/favorite_new" class="com.wooye.favorite.controller.favController"></bean>
+	<bean id="favorite/favorite_newsubmit" class="com.wooye.favorite.controller.favController"></bean>
+	<bean id="login/login" class="com.wooye.user.controller.LoginController"></bean>
+	<bean id="join/join_up" class="com.wooye.join.controller.joinController"></bean>
+	<bean id="join/join_check" class="com.wooye.join.controller.joinController"></bean>
+	<bean id="join/join_check2" class="com.wooye.join.controller.joinController"></bean>
+	<bean id="board/board_main" class="com.wooye.board.controller.BoardController"></bean>
+	<bean id="board/getBoardList" class="com.wooye.board.controller.BoardController"></bean>
+	<bean id="board/getBoard" class="com.wooye.board.controller.BoardController"></bean>
+	<bean id="board/insertBoard" class="com.wooye.board.controller.BoardController"></bean>
+	<bean id="board/updateBoard" class="com.wooye.board.controller.BoardController"></bean>
+	<bean id="board/deleteBoard" class="com.wooye.board.controller.BoardController"></bean>
+	<bean id="board/updateComment" class="com.wooye.board.controller.BoardController"></bean>
+	<bean id="board/deleteComment" class="com.wooye.board.controller.BoardController"></bean>
+	<bean id="board/cleanBoard" class="com.wooye.board.controller.BoardController"></bean>
+	<bean id="board/cleanBoardcmt" class="com.wooye.board.controller.BoardController"></bean>
+	<bean id="board/likeBoard" class="com.wooye.board.controller.BoardController"></bean>
+	<bean id="mypage/myPage" class="com.wooye.mypage.controller.mypageController"></bean>
+	<bean id="mypage/byemyPage" class="com.wooye.mypage.controller.mypageController"></bean>
+	<bean id="mypage/modifymyPage" class="com.wooye.mypage.controller.mypageController"></bean>
+	<bean id="mypage/exconmyPage" class="com.wooye.mypage.controller.mypageController"></bean>
+	<bean id="mypage/boardmyPage" class="com.wooye.mypage.controller.mypageController"></bean>
+	<bean id="mypage/commentmyPage" class="com.wooye.mypage.controller.mypageController"></bean>
+	<bean id="mypage/boardcutmyPage" class="com.wooye.mypage.controller.mypageController"></bean>
+	<bean id="mypage/commentcutmyPage" class="com.wooye.mypage.controller.mypageController"></bean>
+	<bean id="mypage/coinbuymyPage" class="com.wooye.mypage.controller.mypageController"></bean>
+	<bean id="logout" class="com.wooye.user.controller.LogoutController"></bean>
+	<bean id="mypage/bye" class="com.wooye.mypage.controller.mypageController"></bean>
+	<bean id="favorite/myfav_co" class="com.wooye.favorite.controller.favController"></bean>
+	<bean id="favorite/myfav_cp" class="com.wooye.favorite.controller.favController"></bean>
+	<bean id="favorite/myfav_cn" class="com.wooye.favorite.controller.favController"></bean>
+
+	<!-- ViewResolver 등록 -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/"></property>
+		<property name="suffix" value=".jsp"></property>
+		<property name="contentType" value="text/html; charset=UTF-8"/>
+	</bean>
+</beans>
