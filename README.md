@@ -14,3 +14,7 @@ Open API와 추천 시스템(머신러닝)을 활용한 SpringMVC WEB
 [Amazon EC2 주소 및 메인 페이지 디자인]
 ![우예웹_메인페이지_AWS주소](https://user-images.githubusercontent.com/116962624/200189422-905f7973-bfa0-4abc-a7a8-748fd75e8125.PNG)
 ![우예웹_메인페이지](https://user-images.githubusercontent.com/116962624/200186464-c68380ac-b387-4ebe-b56a-fcf95eef0933.jpeg)
+
+주소: http://44.193.255.186:8080
+Amazon EC2 - putty 웹 실행 (리눅스)코드: sudo /usr/local/tomcat9.0/apache-tomcat-9.0.68/bin/startup.sh
+
