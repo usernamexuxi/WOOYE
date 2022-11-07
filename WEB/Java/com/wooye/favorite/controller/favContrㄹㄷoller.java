@@ -27,20 +27,20 @@ public class favController {
 	public String main(Model model, javax.servlet.http.HttpServletRequest HttpServletRequest,
 			JoinTasteDAO jointasteDAO) {
 		String id = HttpServletRequest.getParameter("id");
-		// Å×½ºÆ® ¾ÆÀÌµğ ³Ö±â
+		// í…ŒìŠ¤íŠ¸ ì•„ì´ë”” ë„£ê¸°
 		jointasteDAO.testid_d(id);
 		jointasteDAO.testid(id);
 
-		// È¸¿ø°¡ÀÔ ¶§ ±âÀÔÇÑ ÃëÇâ ¸®½ºÆ® °¡Á®¿À±â
-		// ½Ã´ë
+		// íšŒì›ê°€ì… ë•Œ ê¸°ì…í•œ ì·¨í–¥ ë¦¬ìŠ¤íŠ¸ ê°€ì ¸ì˜¤ê¸°
+		// ì‹œëŒ€
 		model.addAttribute("eraList", jointasteDAO.EraList(id));
-		// È­°¡
+		// í™”ê°€
 		model.addAttribute("artistList", jointasteDAO.ArtistList(id));
-		// À½¾Ç°¡
+		// ìŒì•…ê°€
 		model.addAttribute("musicianList", jointasteDAO.MusicianList(id));
-		// ¸íÈ­
+		// ëª…í™”
 		model.addAttribute("artList", jointasteDAO.ArtList(id));
-		// Å¬·¡½Ä
+		// í´ë˜ì‹
 		model.addAttribute("classicList", jointasteDAO.ClassicList(id));
 		return "favorite/favorite_main";
 	}
@@ -56,34 +56,34 @@ public class favController {
 			Model model, JoinTasteDAO jointasteDAO) {
 		String id = HttpServletRequest.getParameter("id");
 
-		// ÃëÇâ ±âÀÔ Àü µğºñ ºñ¿ì±â
+		// ì·¨í–¥ ê¸°ì… ì „ ë””ë¹„ ë¹„ìš°ê¸°
 		jointasteDAO.deleteMyEra(id);
 		jointasteDAO.deleteMyAritist(id);
 		jointasteDAO.deleteMyMusician(id);
 		jointasteDAO.deleteMyArt(id);
 		jointasteDAO.deleteMyClassic(id);
 
-		// ½Ã´ë
+		// ì‹œëŒ€
 		String[] era = HttpServletRequest.getParameterValues("e1");
 		for (int i = 0; i < era.length; i++)
 			joinDAO.insert_era(id, era[i]);
 
-		// À½¾Ç°¡
+		// ìŒì•…ê°€
 		String[] musician = HttpServletRequest.getParameterValues("e2");
 		for (int i = 0; i < musician.length; i++)
 			joinDAO.insert_musician(id, musician[i]);
 
-		// È­°¡
+		// í™”ê°€
 		String[] artist = HttpServletRequest.getParameterValues("e3");
 		for (int i = 0; i < artist.length; i++)
 			joinDAO.insert_artist(id, artist[i]);
 
-		// ¸íÈ­
+		// ëª…í™”
 		String[] art = HttpServletRequest.getParameterValues("e4");
 		for (int i = 0; i < art.length; i++)
 			joinDAO.insert_art(id, art[i]);
 
-		// Å¬·¡½Ä
+		// í´ë˜ì‹
 		String[] classic = HttpServletRequest.getParameterValues("e5");
 		for (int i = 0; i < classic.length; i++)
 			joinDAO.insert_classic(id, classic[i]);
@@ -116,10 +116,10 @@ public class favController {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		mav.addObject("start_list", sb.toString()); // "test1"´Â jspÆÄÀÏ¿¡¼­ ¹ŞÀ»¶§ ÀÌ¸§,
-		// sb.toStringÀº value°ª(¿©±â¿¡¼± test)
+		mav.addObject("start_list", sb.toString()); // "test1"ëŠ” jspíŒŒì¼ì—ì„œ ë°›ì„ë•Œ ì´ë¦„,
+		// sb.toStringì€ valueê°’(ì—¬ê¸°ì—ì„  test)
 		mav.addObject("fail", false);
-		mav.setViewName("favorite/myfav_co"); // jspÆÄÀÏ ÀÌ¸§
+		mav.setViewName("favorite/myfav_co"); // jspíŒŒì¼ ì´ë¦„
 		return mav;
 	}
 
@@ -148,10 +148,10 @@ public class favController {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		mav.addObject("recomm_masterpiece_list", sb.toString()); // "test1"´Â jspÆÄÀÏ¿¡¼­ ¹ŞÀ»¶§ ÀÌ¸§,
-		// sb.toStringÀº value°ª(¿©±â¿¡¼± test)
+		mav.addObject("recomm_masterpiece_list", sb.toString()); // "test1"ëŠ” jspíŒŒì¼ì—ì„œ ë°›ì„ë•Œ ì´ë¦„,
+		// sb.toStringì€ valueê°’(ì—¬ê¸°ì—ì„  test)
 		mav.addObject("fail", false);
-		mav.setViewName("favorite/myfav_cn"); // jspÆÄÀÏ ÀÌ¸§
+		mav.setViewName("favorite/myfav_cn"); // jspíŒŒì¼ ì´ë¦„
 		return mav;
 	}
 
@@ -179,10 +179,10 @@ public class favController {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		mav.addObject("re_ma_title", sb.toString()); // "test1"´Â jspÆÄÀÏ¿¡¼­ ¹ŞÀ»¶§ ÀÌ¸§,
-		// sb.toStringÀº value°ª(¿©±â¿¡¼± test)
+		mav.addObject("re_ma_title", sb.toString()); // "test1"ëŠ” jspíŒŒì¼ì—ì„œ ë°›ì„ë•Œ ì´ë¦„,
+		// sb.toStringì€ valueê°’(ì—¬ê¸°ì—ì„  test)
 		mav.addObject("fail", false);
-		mav.setViewName("favorite/myfav_cp"); // jspÆÄÀÏ ÀÌ¸§
+		mav.setViewName("favorite/myfav_cp"); // jspíŒŒì¼ ì´ë¦„
 		return mav;
 	}
 }
