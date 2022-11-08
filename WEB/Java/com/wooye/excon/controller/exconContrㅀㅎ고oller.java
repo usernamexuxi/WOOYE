@@ -48,10 +48,10 @@ public class exconController {
 			/*
 			 * StringBuilder urlBuilder = null; urlBuilder = new StringBuilder(
 			 * "http://www.culture.go.kr/openapi/rest/publicperformancedisplays/area"); //
-			 * URL -> area´Â Áö¿ªº° urlBuilder.append("?" + URLEncoder.encode("serviceKey",
+			 * URL -> areaëŠ” ì§€ì—­ë³„ urlBuilder.append("?" + URLEncoder.encode("serviceKey",
 			 * "UTF-8") +
 			 * "=8Cv3k8m6paszauOsiWNRx1UYzdoQzHZuU7fPHIx3GV0BtyON4YdjSgnsQFNNFkx0Z1VcHtxeyz7QsJIc4W%2BoVw%3D%3D"
-			 * ); //¼­ºñ½ºÅ°1¹ø urlBuilder.append("&" + URLEncoder.encode("sido", "UTF-8") + "="
+			 * ); //ì„œë¹„ìŠ¤í‚¤1ë²ˆ urlBuilder.append("&" + URLEncoder.encode("sido", "UTF-8") + "="
 			 * + URLEncoder.encode(sido, "UTF-8"));
 			 */
 
@@ -61,7 +61,7 @@ public class exconController {
 					+ "=8Cv3k8m6paszauOsiWNRx1UYzdoQzHZuU7fPHIx3GV0BtyON4YdjSgnsQFNNFkx0Z1VcHtxeyz7QsJIc4W%2BoVw%3D%3D"); 
 			urlBuilder.append("&" + URLEncoder.encode("cPage", "UTF-8") + "=" + URLEncoder.encode("1", "UTF-8")); /**/
 			urlBuilder
-					.append("&" + URLEncoder.encode("rows", "UTF-8") + "=" + URLEncoder.encode("10", "UTF-8")); /* 10=10°³ÀÓ */
+					.append("&" + URLEncoder.encode("rows", "UTF-8") + "=" + URLEncoder.encode("10", "UTF-8")); /* 10=10ê°œì„ */
 			urlBuilder.append("&" + URLEncoder.encode("keyword", "UTF-8") + "=" + URLEncoder.encode(sido, "UTF-8"));
 			URL url = new URL(urlBuilder.toString());
 
@@ -75,7 +75,7 @@ public class exconController {
 
 			System.out.println("Root element : " + doc.getDocumentElement().getNodeName());
 
-			// xml¿¡¼­ °¡Á®¿Ã ÅÂ±× ¼±Á¤ÇÏ´Â°ÅÀÓ
+			// xmlì—ì„œ ê°€ì ¸ì˜¬ íƒœê·¸ ì„ ì •í•˜ëŠ”ê±°ì„
 			NodeList nList = doc.getElementsByTagName("perforList");
 			System.out.println("-----------------");
 
@@ -160,7 +160,7 @@ public class exconController {
 		if (exconDAO.checkExcon(id, seq) == 0) {
 			exconDAO.insertExcon(vo);
 		} else {
-			System.out.println("ÀÌ¹Ì ¿¹¾àÇÑ Àü½ÃÈ¸ÀÔ´Ï´Ù.");
+			System.out.println("ì´ë¯¸ ì˜ˆì•½í•œ ì „ì‹œíšŒì…ë‹ˆë‹¤.");
 		}
 		return "excon/ExConCompl";
 	}
