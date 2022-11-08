@@ -13,7 +13,7 @@ Open API와 추천 시스템(머신러닝)을 활용한 SpringMVC WEB
 
 <우예 웹 시연영상>
 - 비회원(배속 심함): https://user-images.githubusercontent.com/116962624/200561534-444f0ec8-a8a5-4c66-a88c-efbf5a6517c8.mp4
-- 회원(배속 심함): 
+- 회원(심하게 빠른 배속): 
 - 관리자(배속): https://user-images.githubusercontent.com/116962624/200559642-aaebd273-9237-499c-a3fd-66be291a7109.mp4
 - 비회원~정보(배속): https://user-images.githubusercontent.com/116962624/200558957-75197b28-fc9c-4899-9f97-c47567f0864e.mp4
 - 회원~나의 취향(배속): https://user-images.githubusercontent.com/116962624/200557938-916fca35-f142-40e6-a133-4234acf1b0f7.mp4
