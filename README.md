@@ -12,6 +12,7 @@ Open API와 추천 시스템(머신러닝)을 활용한 SpringMVC WEB
 <br>
 
 [Amazon EC2 주소 및 메인 페이지 디자인]
+![Amazon 우예웹 EC2 정보](https://user-images.githubusercontent.com/116962624/200503294-40f78c5e-2293-4ea8-94d9-02e4095c377d.PNG)
 ![우예웹_메인페이지_AWS주소](https://user-images.githubusercontent.com/116962624/200189422-905f7973-bfa0-4abc-a7a8-748fd75e8125.PNG)
 ![우예웹_메인페이지](https://user-images.githubusercontent.com/116962624/200186464-c68380ac-b387-4ebe-b56a-fcf95eef0933.jpeg)
 
