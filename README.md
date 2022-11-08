@@ -12,10 +12,12 @@ Open API와 추천 시스템(머신러닝)을 활용한 SpringMVC WEB
 <br>
 
 <우예 웹 시연영상>
-- 비회원
+- 비회원:
 - 회원(배속 심함): https://user-images.githubusercontent.com/116962624/200554670-b4ee99f7-1bcb-4b37-8baf-cb1ae5031774.mp4
-- 관리자
-- 
+- 관리자(배속):
+- 비회원~정보(배속):
+- 회원~나의 취향(배속): 
+
 <br>
 
 <Amazon EC2 주소 및 메인 페이지 디자인>
