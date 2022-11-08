@@ -27,4 +27,4 @@ Open API와 추천 시스템(머신러닝)을 활용한 SpringMVC WEB
 
 WOOYE 웹 주소: http://44.193.255.186:8080
 <br>(Amazon EC2 - putty 웹 실행 (리눅스)코드: sudo /usr/local/tomcat9.0/apache-tomcat-9.0.68/bin/startup.sh)
-
+- ppt 속 ott 영상 출처: https://www.youtube.com/shorts/1vZgpl4fBc0
