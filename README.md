@@ -12,7 +12,7 @@ Open API와 추천 시스템(머신러닝)을 활용한 SpringMVC WEB
 <br>
 
 - <WOOYE_발표자료.pptx>
-- <ScreenCapture>
+- <ScreenCapture : 우예 웹 캡처 모음>
 
 <br>
 
