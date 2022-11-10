@@ -11,7 +11,7 @@ Open API와 추천 시스템(머신러닝)을 활용한 SpringMVC WEB
 
 <br>
 
-[폴더 소개]
+<폴더 소개>
 - WOOYE_발표자료.pptx
 - ScreenCapture: 우예 웹 캡처 모음
 - WEB: 웹 코드(백엔드/프론트 앤드)
@@ -37,7 +37,7 @@ Open API와 추천 시스템(머신러닝)을 활용한 SpringMVC WEB
 
 <br>
   
-[참고]
-WOOYE 웹 주소: http://44.193.255.186:8080 (서버 닫은 상태)
-<br>(Amazon EC2 - putty 웹 실행 (리눅스)코드: sudo /usr/local/tomcat9.0/apache-tomcat-9.0.68/bin/startup.sh)
+<참고>
+- WOOYE 웹 주소: http://44.193.255.186:8080 (서버 닫은 상태)
+- Amazon EC2 - putty 웹 실행 (리눅스)코드: sudo /usr/local/tomcat9.0/apache-tomcat-9.0.68/bin/startup.sh)
 - ppt 속 ott 영상 출처: https://www.youtube.com/shorts/1vZgpl4fBc0
