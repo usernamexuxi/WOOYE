@@ -12,7 +12,7 @@ Open API와 추천 시스템(머신러닝)을 활용한 SpringMVC WEB
 <br>
 
 <폴더 소개>
-- 보고서: 우예 웹 최종 보고서
+- WOOYE_보고서: 우예 웹 최종 보고서
 - WOOYE_발표자료.pptx
 - ScreenCapture: 우예 웹 캡처 모음
 - WEB: 웹 코드(백엔드/프론트 앤드)
