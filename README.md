@@ -16,6 +16,7 @@ Open API와 추천 시스템(머신러닝)을 활용한 SpringMVC WEB
 - ScreenCapture: 우예 웹 캡처 모음
 - WEB: 웹 코드(백엔드/프론트엔드)
 - DB: Amazon RDS~MySQL, Amazon S3
+- Server: AWS EC2, Apache Tomcat
 - Flask: 추천시스템 코드(파이썬)
 - RecommendationSystem_Beta: 코랩에서 개발한 딥러닝 추천시스템(DB 테이블도 자체 개발)
 
